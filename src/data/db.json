@@ -1,0 +1,54 @@
+{
+  "stories": [
+    {
+      "id": 1,
+      "title": "El Portal de los Mil Mundos",
+      "author": "Alexandra Rivers",
+      "cover": "/images/portal-worlds.jpg",
+      "excerpt": "Un antiguo portal que conecta realidades paralelas guarda secretos que podrían cambiar el destino de la humanidad.",
+      "node": "Dimensiones Paralelas",
+      "genre": "Fantasía Épica",
+      "featured": true
+    },
+    {
+      "id": 2,
+      "title": "Cronistas del Tiempo",
+      "author": "Marcus Blackwood",
+      "cover": "/images/time-chronicles.jpg",
+      "excerpt": "Los guardianes de la historia deben proteger la línea temporal de aquellos que buscan alterarla para su beneficio.",
+      "node": "Viajes Temporales",
+      "genre": "Ciencia Fantasía",
+      "featured": true
+    },
+    {
+      "id": 3,
+      "title": "Herederos de la Magia Antigua",
+      "author": "Isabella Moon",
+      "cover": "/images/ancient-magic.jpg",
+      "excerpt": "En un mundo donde la magia está muriendo, un grupo de jóvenes descubre que son los últimos herederos de un poder ancestral.",
+      "node": "Magia Elemental",
+      "genre": "Fantasía Urbana",
+      "featured": true
+    }
+  ],
+  "nodes": [
+    {
+      "id": 1,
+      "name": "Dimensiones Paralelas",
+      "description": "Historias que exploran la existencia de múltiples realidades y sus interconexiones.",
+      "color": "blue"
+    },
+    {
+      "id": 2,
+      "name": "Viajes Temporales",
+      "description": "Narrativas que juegan con el concepto del tiempo y sus paradojas.",
+      "color": "purple"
+    },
+    {
+      "id": 3,
+      "name": "Magia Elemental",
+      "description": "Relatos centrados en el control de los elementos y poderes místicos ancestrales.",
+      "color": "green"
+    }
+  ]
+} 

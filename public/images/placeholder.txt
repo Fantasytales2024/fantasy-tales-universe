@@ -1,0 +1,49 @@
+Para las imágenes del proyecto Fantasy Tales Universe, se necesitan los siguientes recursos:
+
+1. IMÁGENES PARA HISTORIAS
+   - portal-worlds.jpg - Portal cósmico brillante con múltiples realidades
+   - time-chronicles.jpg - Relojes antiguos y líneas temporales entrelazadas
+   - ancient-magic.jpg - Símbolos mágicos brillantes y elementos místicos
+   
+   Dimensiones: 800x600px
+   Formato: JPG
+   Resolución: 72 DPI
+
+2. ASSETS PARA EL HERO BANNER
+   - cosmic-particles.png - Partículas doradas con transparencia para el portal
+   - portal-glow.png - Efecto de resplandor para el portal 3D
+   - background-stars.jpg - Fondo estrellado para el espacio
+   
+   Dimensiones: 1920x1080px (responsive)
+   Formato: PNG con transparencia para efectos
+   Resolución: 72 DPI
+
+3. ICONOS Y ELEMENTOS UI
+   - node-icons/*.svg - Iconos para los diferentes tipos de nodos
+   - ui-elements/*.svg - Elementos de interfaz (botones, marcos, etc.)
+   - loading-spinner.svg - Animación de carga
+   
+   Formato: SVG (vectorial)
+   Colores: Adaptables a tema claro/oscuro
+
+4. IMÁGENES DE PERFIL Y AVATARES
+   - default-avatar.jpg - Avatar por defecto para usuarios
+   - author-placeholder.jpg - Imagen placeholder para autores
+   
+   Dimensiones: 200x200px
+   Formato: JPG/PNG
+   Resolución: 72 DPI
+
+Recursos recomendados para obtener/crear imágenes:
+- Midjourney - Para ilustraciones fantásticas y portales
+- DALL-E - Para generación de assets específicos
+- Stable Diffusion - Para variaciones y ajustes
+- Unsplash.com - Para fotografías de alta calidad
+- Figma/Adobe Illustrator - Para iconos y elementos UI
+
+Notas importantes:
+- Mantener consistencia en el estilo visual
+- Optimizar todas las imágenes para web
+- Incluir versiones para diferentes densidades de pantalla (1x, 2x)
+- Asegurar buen contraste para accesibilidad
+- Mantener un tamaño de archivo razonable para carga rápida 
