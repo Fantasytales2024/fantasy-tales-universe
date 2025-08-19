@@ -1,6 +1,6 @@
 import React from 'react';
 import { render, screen, waitFor } from '@testing-library/react';
-import { vi, describe, it, expect, beforeEach } from 'vitest';
+import { vi } from 'vitest';
 import { AuthProvider, useAuth } from './AuthContext';
 import { 
   signInWithEmailAndPassword,
@@ -96,7 +96,7 @@ describe('AuthContext', () => {
   });
 
   test('provee el usuario actual cuando está autenticado', async () => {
-    (onAuthStateChanged as jest.Mock).mockImplementation((auth, callback) => {
+    vi.mocked(onAuthStateChanged).mockImplementation((auth, callback) => {
       callback(mockUser);
       return () => {};
     });
@@ -113,7 +113,7 @@ describe('AuthContext', () => {
   });
 
   test('maneja el inicio de sesión con email correctamente', async () => {
-    (signInWithEmailAndPassword as jest.Mock).mockResolvedValueOnce({
+    vi.mocked(signInWithEmailAndPassword).mockResolvedValueOnce({
       user: mockUser
     });
 
@@ -135,10 +135,10 @@ describe('AuthContext', () => {
   });
 
   test('maneja el registro con email correctamente', async () => {
-    (createUserWithEmailAndPassword as jest.Mock).mockResolvedValueOnce({
+    vi.mocked(createUserWithEmailAndPassword).mockResolvedValueOnce({
       user: mockUser
     });
-    (setDoc as jest.Mock).mockResolvedValueOnce({});
+    vi.mocked(setDoc).mockResolvedValueOnce({});
 
     render(
       <AuthProvider>
@@ -160,11 +160,11 @@ describe('AuthContext', () => {
 
   test('maneja el inicio de sesión con Google correctamente', async () => {
     const mockProvider = new GoogleAuthProvider();
-    (signInWithPopup as jest.Mock).mockResolvedValueOnce({
+    vi.mocked(signInWithPopup).mockResolvedValueOnce({
       user: mockUser
     });
-    (doc as jest.Mock).mockReturnValue('mockedDocRef');
-    (setDoc as jest.Mock).mockResolvedValueOnce({});
+    vi.mocked(doc).mockReturnValue('mockedDocRef');
+    vi.mocked(setDoc).mockResolvedValueOnce({});
 
     render(
       <AuthProvider>
@@ -191,7 +191,7 @@ describe('AuthContext', () => {
   });
 
   test('maneja el cierre de sesión correctamente', async () => {
-    (signOut as jest.Mock).mockResolvedValueOnce({});
+    vi.mocked(signOut).mockResolvedValueOnce({});
 
     render(
       <AuthProvider>

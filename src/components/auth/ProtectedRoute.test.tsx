@@ -29,7 +29,7 @@ describe('ProtectedRoute', () => {
   });
 
   test('muestra el spinner de carga cuando está cargando', () => {
-    (useAuth as jest.Mock).mockReturnValue({
+    vi.mocked(useAuth).mockReturnValue({
       currentUser: null,
       loading: true,
     });
@@ -47,7 +47,7 @@ describe('ProtectedRoute', () => {
   });
 
   test('redirige a /inicio cuando no hay usuario autenticado', () => {
-    (useAuth as jest.Mock).mockReturnValue({
+    vi.mocked(useAuth).mockReturnValue({
       currentUser: null,
       loading: false,
     });
@@ -65,7 +65,7 @@ describe('ProtectedRoute', () => {
   });
 
   test('redirige a la ruta especificada cuando no hay usuario autenticado', () => {
-    (useAuth as jest.Mock).mockReturnValue({
+    vi.mocked(useAuth).mockReturnValue({
       currentUser: null,
       loading: false,
     });
@@ -82,7 +82,7 @@ describe('ProtectedRoute', () => {
   });
 
   test('renderiza el contenido cuando hay un usuario autenticado', () => {
-    (useAuth as jest.Mock).mockReturnValue({
+    vi.mocked(useAuth).mockReturnValue({
       currentUser: { email: 'test@example.com' },
       loading: false,
     });

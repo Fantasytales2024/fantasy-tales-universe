@@ -16,7 +16,7 @@ describe('LoginModal', () => {
   const mockOnClose = vi.fn();
 
   beforeEach(() => {
-    (useAuth as jest.Mock).mockReturnValue({
+    vi.mocked(useAuth).mockReturnValue({
       signInWithEmail: mockSignInWithEmail,
       signUpWithEmail: mockSignUpWithEmail,
       signInWithGoogle: mockSignInWithGoogle,
