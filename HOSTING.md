@@ -30,9 +30,9 @@ firebase init
 # - Hosting: Configure files for Firebase Hosting
 # - Use an existing project
 # - Seleccionar tu proyecto "fantasy-tales-universe"
-# - ¿What do you want to use as your public directory? dist
-# - ¿Configure as a single-page app (rewrite all urls to /index.html)? Yes
-# - ¿Set up automatic builds and deploys with GitHub? No
+# - What do you want to use as your public directory? dist
+# - Configure as a single-page app (rewrite all urls to /index.html)? Yes
+# - Set up automatic builds and deploys with GitHub? No
 ```
 
 ## 4. Configuración del archivo firebase.json
